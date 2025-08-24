@@ -1,7 +1,8 @@
 # Credit-Card-Fraud-Detection-with-Isolation-Forest
+
 Overview
 
-This project implements fraud detection using Isolation Forest on Kaggle data, emphasizing EDA, modeling, and evaluation.
+This project implements fraud detection using Isolation Forest on Kaggle data, focusing on imbalanced datasets.
 
 Dataset
 
@@ -33,7 +34,7 @@ fraud_data_for_bi.csv: Processed data.
 
 
 
-Visuals: class_distribution.png, amount_distribution.png, amount_boxplot.png, scatter_amount_time.png, confusion_matrix.png, decision_scores.png, feature_importance.png.
+Visuals: class_distribution.png, amount_distribution.png, etc.
 
 Results
 
@@ -41,19 +42,29 @@ Results
 
 
 
-ROC-AUC: ~0.95
+ROC-AUC:
 
 
 
-Classification Report: High recall for fraud (~0.85), suitable for imbalanced data.
+Classification Report:
 
 
 
-Key Insights: Frauds have lower amounts and cluster in specific times. V14, V12, V10 most important features.
+
+
+Non-Fraud (0): Precision 1.00, Recall 1.00, F1 1.00
 
 
 
-Application: Real-time fraud monitoring.
+Fraud (1): Precision 0.33, Recall 0.34, F1 0.33
+
+
+
+Key Insights: Model favors Non-Fraud; work in progress to improve Fraud detection.
+
+
+
+Application: Potential for real-time fraud monitoring.
 
 Installation
 
@@ -69,4 +80,4 @@ Install: pip install pandas numpy scikit-learn matplotlib seaborn joblib
 
 
 
-Run the notebook on Kaggle or locally.
+Run the notebook.
